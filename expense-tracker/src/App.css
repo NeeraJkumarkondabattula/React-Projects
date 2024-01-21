@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+
+h1{
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 0 10px;
+  line-height: 25px;
+}
+
+h2{
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+p{
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 0 10px;
+}
+
+label{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 8px;
+  text-transform: capitalize;
+}
+
+body{
+  width: 300px;
+  height: 100vh;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 20px ;
+}
+
+.container{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.incomeExpense{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+  box-shadow: 1px 1px 2px 1px rgba(0,0,0,.4);
+}
+
+.incomeExpense div{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+  padding-top: 5px;
+}
+
+.income{
+  color: green;
+}
+
+.expense{
+  color: red;
+}
+
+li {
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+.transactions{
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow-y: scroll;
+}
+
+.transactions::-webkit-scrollbar {
+  width: 2px;
+}
+
+.transactions::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.3);
+}
+
+.transaction{
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 0fr;
+}
+
+.transaction .purpose{
+  float: left;
+}
+
+
+.in::after{
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: green;
+}
+
+.ex::after{
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: red;
+}
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input{
+  padding: 4px 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+button{
+  font-weight: 500;
+  background-color: blueviolet;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 5px 0;
+}
+
+
